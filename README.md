@@ -39,4 +39,11 @@ En cuanto a los métodos que se han usado durante la práctica son:
 
 Finalmente, mencionar que Las dos operaciones con @Query se usan en los stributos  id y age.
 
-Como ya se ha explicado, no se ha podido levantar el servidor de Spring boot pero para comprobar que se pueden ejecutar todos los comandos mencionados habria que acceder al siguiente link
+Como ya se ha explicado, no se ha podido levantar el servidor de Spring boot pero para comprobar que se pueden ejecutar todos los comandos mencionados:
+Si se realiza un **GET** se han de mostrar los clientes introducidos en data.sql, en mi caso solo he escrito 4. Para ello se accede al siguiente link: localhost:8080/api/v1/clients/. Si en vez de querer mostrar todos los clientes, se quiere buscar uno en concreto, por medio del id y haciendo un get se puede obtener dicha información, en este caso si queremos buscar el cliente C20223 seria:  localhost:8080/api/v1/clients/C20223/
+
+Si se quiere realizar un **PUT** para modificar por ejemplo el tercer participane y cambiar su edad, habrá que acceder a localhost:8080/api/v1/clients/C20223/
+
+Para poder borrar un cliente se ha de hacer uso del método **DELETE** y habrá que indicarle en la URL qué cliente se desea borrar. Por ejemplo, si es el tercero como en el caso anterior, la URL sería DELETE localhost:8080/api/v1/clients/C20223/
+
+
